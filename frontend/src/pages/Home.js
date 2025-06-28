@@ -7,7 +7,7 @@ function Home() {
   const [hasSelected, setHasSelected] = useState(false);
   const [recentImages, setRecentImages] = useState([]);
   const scrollRef = useRef(null);
-  const [scrollDir, setScrollDir] = useState(1); // 1 = 右，-1 = 左
+  const [scrollDir, setScrollDir] = useState(1);
 
   const today = new Date();
   const todayStr = today.toISOString().split('T')[0];
@@ -54,7 +54,7 @@ function Home() {
     fetchRecentImages();
   }, []);
 
-  // 自动滚动逻辑
+
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
@@ -65,13 +65,13 @@ function Home() {
       const maxScroll = container.scrollWidth - container.clientWidth;
 
       if (container.scrollLeft >= maxScroll) {
-        setScrollDir(-1); // 到右边，向左滚
+        setScrollDir(-1);
       } else if (container.scrollLeft <= 0) {
-        setScrollDir(1); // 到左边，向右滚
+        setScrollDir(1); 
       }
     };
 
-    const interval = setInterval(scroll, 30); // 每 30ms 滚动一点
+    const interval = setInterval(scroll, 30); 
     return () => clearInterval(interval);
   }, [scrollDir]);
 
@@ -81,7 +81,7 @@ function Home() {
         className={`banner ${hasSelected ? 'fade' : ''}`}
         key={hasSelected && data ? data.date : 'welcome'}
         style={{
-          backgroundImage: `url(${hasSelected && data ? data.url : "/welcome-bg.jpg"})`,
+          backgroundImage: `url(${hasSelected && data ? data.url : "/welcome-bg.JPG"})`,
         }}
       >
         <div className="banner-content">
