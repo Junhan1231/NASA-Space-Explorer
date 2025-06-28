@@ -116,3 +116,34 @@
     filter: blur(0px);
   }
 }
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    padding: 1.5rem 1rem;
+    background-size: contain; /* ✅ 让背景图跟着缩小 */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .card-row {
+    flex-wrap: wrap; /* ✅ 允许换行 */
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: visible; /* ✅ 禁用横向滚动 */
+  }
+
+  .card-featured {
+    min-width: unset;
+    width: 45%;  /* ✅ 两列展示 */
+    height: 120px;
+  }
+
+  .card-label {
+    font-size: 0.75rem;
+  }
+}
