@@ -1,0 +1,37 @@
+.sidebar {
+  width: 80px;
+  background-color: #3d3d3d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav-icons a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-icons a:hover,
+.nav-icons a.active {
+  color: #1e90ff;
+}

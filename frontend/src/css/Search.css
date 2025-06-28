@@ -1,0 +1,95 @@
+.search-page {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #222;
+  color: white;
+}
+
+.search-bar button {
+  padding: 0.6rem 1.2rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0f70d4;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.search-card {
+  background-color: #151d2a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.search-image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.search-info {
+  padding: 1rem;
+}
+
+.search-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ✅ Loading Spinner 动画 */
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  z-index: 9999;
+}
+
+
+
+.css-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #1e90ff;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

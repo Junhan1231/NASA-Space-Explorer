@@ -1,0 +1,118 @@
+/* ===== 顶部横幅 Banner ===== */
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+  box-sizing: border-box;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.banner-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== 日期选择与按钮 ===== */
+.learn-button {
+  background: #1e90ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+.learn-button:hover {
+  background: #0f70d4;
+}
+
+.date-picker {
+  background: #222;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* ===== Featured 卡片区 ===== */
+.carousel h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  max-width: 100%;
+  scrollbar-width: none;         /* Firefox 隐藏滚动条 */
+}
+
+.card-row::-webkit-scrollbar {
+  display: none;                 /* Chrome 隐藏滚动条 */
+}
+
+.card-featured {
+  min-width: 240px;
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.card-featured:hover {
+  transform: scale(1.05);
+}
+
+.card-label {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+/* ===== 动画效果 ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
