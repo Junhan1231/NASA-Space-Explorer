@@ -7,9 +7,9 @@ const PORT = 5000;
 
 app.use(cors());
 
-const NASA_API_KEY = 'iSVfNOAvaYb6xnkScvFZKSjYTeIKvFvZFmASUbzw'; // 替换为你的 key
+const NASA_API_KEY = 'iSVfNOAvaYb6xnkScvFZKSjYTeIKvFvZFmASUbzw';
 
-// ✅ 单个日期请求（你已有的）
+
 app.get('/api/apod', async (req, res) => {
   try {
     const { date } = req.query;
@@ -38,5 +38,5 @@ app.get('/api/apod-range', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Backend server running at http://localhost:${PORT}`);
+  console.log(`Backend server running at http://localhost:${PORT}`);
 });

@@ -1,11 +1,40 @@
 .visualization-page {
   padding: 2rem;
-  max-width: 800px;
+  color: #fff;
+  text-align: center;
+  max-width: 1200px;
   margin: 0 auto;
-  color: white;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.chart-box {
+  background: #141a2d;
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.chart-box:hover {
+  transform: scale(1.02);
+}
+
+.chart-box h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
