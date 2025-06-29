@@ -2,7 +2,7 @@
 
 An interactive web app to explore NASA's Astronomy Picture of the Day (APOD) and visualize real-time data from space APIs like near-Earth asteroids and solar CMEs.
 
-## 🌟 Features
+## Features
 
 - Browse NASA APOD images from the past 30 days
 - Search APODs by title keywords
@@ -12,16 +12,16 @@ An interactive web app to explore NASA's Astronomy Picture of the Day (APOD) and
 - Fully responsive and mobile-friendly design
 - Built using React.js + Recharts + NASA APIs
 
-## 📸 Screenshots
+## Screenshots
 
 ### Homepage
-![Home](../NASA/Main.png)
+![Home](frontend/screenshots/home.png)
 
 ### Search Functionality
-![Search](../NASA/search.png)
+![Search](frontend/screenshots/search.png)
 
 ### Data Visualizations
-![Visualizations](../NASA/data.png)
+![Visualizations](frontend/screenshots/visualizations.png)
 
 ## Tech Stack
 
