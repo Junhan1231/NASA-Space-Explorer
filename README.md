@@ -23,12 +23,23 @@ An interactive web app to explore NASA's Astronomy Picture of the Day (APOD) and
 ### Data Visualizations
 ![Visualizations](frontend/NASA/data.png)
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- Frontend: React.js (Create React App)
-- Styling: CSS Modules
-- Charts: Recharts
-- APIs: NASA APOD, Asteroids NeoWs, DONKI
+### Frontend
+- **React.js** (via Create React App)
+- **CSS Modules** for component styling
+- **Recharts** for all data visualizations
+
+### Backend
+- **Node.js + Express**
+- Acts as a proxy and formatter for NASA public APIs
+- Handles multi-date queries (e.g. APOD Range)
+
+### APIs Used
+- [NASA APOD (Astronomy Picture of the Day)](https://api.nasa.gov/)
+- [NASA Asteroids - NeoWs](https://api.nasa.gov/)
+- [NASA DONKI (Space Weather Events)](https://api.nasa.gov/)
+
 
 ## Live Domain
 
