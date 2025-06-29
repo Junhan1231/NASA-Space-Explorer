@@ -14,9 +14,9 @@ h2 {
 
 .chart-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 固定为两列 */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;
-  justify-items: center; /* 图表盒子水平居中 */
+  justify-items: center;
 }
 
 .chart-box {
@@ -42,7 +42,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* ✅ 可选：让它在手机端自动变成一列 */
+
 @media (max-width: 768px) {
   .chart-grid {
     grid-template-columns: 1fr;

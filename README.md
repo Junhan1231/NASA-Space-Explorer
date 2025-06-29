@@ -23,7 +23,7 @@ An interactive web app to explore NASA's Astronomy Picture of the Day (APOD) and
 ### Data Visualizations
 ![Visualizations](frontend/NASA/data.png)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** (via Create React App)
