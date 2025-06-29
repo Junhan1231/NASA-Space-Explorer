@@ -14,8 +14,9 @@ h2 {
 
 .chart-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 固定为两列 */
   gap: 2rem;
+  justify-items: center; /* 图表盒子水平居中 */
 }
 
 .chart-box {
@@ -23,10 +24,12 @@ h2 {
   padding: 1.5rem;
   border-radius: 12px;
   min-height: 320px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
 
@@ -37,4 +40,11 @@ h2 {
 .chart-box h3 {
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+/* ✅ 可选：让它在手机端自动变成一列 */
+@media (max-width: 768px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
 }
