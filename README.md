@@ -15,13 +15,13 @@ An interactive web app to explore NASA's Astronomy Picture of the Day (APOD) and
 ## Screenshots
 
 ### Homepage
-![Home](frontend/screenshots/home.png)
+![Home](frontend/NASA/Main.png)
 
 ### Search Functionality
-![Search](frontend/screenshots/search.png)
+![Search](frontend/NASA/search.png)
 
 ### Data Visualizations
-![Visualizations](frontend/screenshots/visualizations.png)
+![Visualizations](frontend/NASA/visualizations.png)
 
 ## Tech Stack
 
